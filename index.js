@@ -28,7 +28,7 @@ db.on("error", console.error.bind(console, "Connection Error!"));
 db.once("open", ()=> console.log("Successfully connected to MongoDB Atlas!"));
 
 const corsOptions = {
-	origin: [`http://localhost:3000`, `http://localhost:4000`, `http://localhost:8000`, `http://localhost:10000`, `https://movie-client-app-jacyn-raquel-jacyn-raquels-projects.vercel.app`],
+	origin: [`http://localhost:3000`, `http://localhost:4000`, `http://localhost:8000`, `http://localhost:10000`, `https://movie-client-app-jacyn-raquel-jacyn-raquels-projects.vercel.app/`, `https://movie-client-app.vercel.app`],
 	credentials: true,
 	optionsSuccessStatus:200
 }
